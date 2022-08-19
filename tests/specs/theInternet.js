@@ -14,7 +14,7 @@ describe("The Internet app", function () {
 
   after(async (browser) => browser.quit());
 
-  xit("should navigate to Welcome page", function (browser) {
+  it("should navigate to Welcome page", function (browser) {
     homePage.assert
       .titleContains("The Internet")
       .expect.element("@header")

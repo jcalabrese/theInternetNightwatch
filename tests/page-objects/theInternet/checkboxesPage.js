@@ -13,11 +13,6 @@
  */
 
 const checkboxesComands = {
-  // submit() {
-  //   this.waitForElementVisible("@submitButton", 1000).click("@submitButton");
-  //   this.pause(1000);
-  //   return this; // for command-chaining
-  // },
   clickCheckbox1() {
     this.waitForElementVisible("@checkbox1", 1000).click("@checkbox1");
     return this;
