@@ -13,8 +13,8 @@
  */
 
 const homeCommands = {
-  clickCheckboxesLink() {
-    this.waitForElementVisible("@checkboxes", 1000).click("@checkboxes");
+  clickLink(link) {
+    this.waitForElementVisible(link, 1000).click(link);
     return this;
   },
 };
@@ -31,6 +31,15 @@ module.exports = {
 
     checkboxes: {
       selector: "Checkboxes",
+      locateStrategy: "link text",
+    },
+    contextMenu: {
+      selector: "Context Menu",
+      locateStrategy: "link text",
+    },
+    formAuthentication: {
+      //This link is to displayed Login
+      selector: "Form Authentication",
       locateStrategy: "link text",
     },
   },
